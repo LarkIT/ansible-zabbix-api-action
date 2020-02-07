@@ -1,0 +1,16 @@
+# tasks/main.yml
+# Create Zabbix action
+---
+- name: Create action
+  zabbix_action:
+    server_url: "{{ zabbix_server_url }}"
+    login_user: "{{ zabbix_login_user }}"
+    login_password: "{{ zabbix_login_password }}"
+    name: "{{ zabbix_action_name }}"
+    event_source: "{{ zabbix_action_event_source }}"
+    state: "{{ zabbix_action_state }}"
+    status: "{{ zabbix_action_status }}"
+    conditions: "{{ zabbix_action_conditions }}"
+    formula: "{{ zabbix_action_conditions_formula }}"
+    operations: "{{ zabbix_action_operations }}"
+    esc_period: "{{ zabbix_action_esc_period }}"

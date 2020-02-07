@@ -1,0 +1,5 @@
+# defaults/main.yml
+# Default params for role
+---
+zabbix_action_state: present
+zabbix_action_status: enabled
