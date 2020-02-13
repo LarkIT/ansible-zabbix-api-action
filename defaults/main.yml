@@ -3,3 +3,4 @@
 ---
 zabbix_action_state: present
 zabbix_action_status: enabled
+zabbix_action_esc_period: 0
